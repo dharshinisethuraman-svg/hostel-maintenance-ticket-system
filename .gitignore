@@ -1,3 +1,36 @@
+# Bytecode & Python Cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Databases & Backups
 *.db
+*.sqlite
+*.sqlite3
+*.bak
+
+# File Uploads & Local Media
+uploads/
+
+# Legacy Backups & Prototypes
+legacy_backup/
+frontend/
+
+# Node Dependencies & Build Output
+node_modules/
+dist/
+
+# Test Scripts
+test_*.mjs
