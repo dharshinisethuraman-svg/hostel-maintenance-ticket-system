@@ -258,9 +258,9 @@ VITE_API_BASE_URL=http://127.0.0.1:8000
 
    name = input('Admin Name: ').strip()
    email = input('Admin Email: ').strip().lower()
-   pwd = getpass.getpass('Admin Password: ').strip()
+   pwd = getpass.getpass('Admin Password: ')
 
-   if not name or not email or not pwd:
+   if not name or not email or not pwd.strip():
        print('Error: Name, email, and password cannot be empty.')
    else:
        db = SessionLocal()
